@@ -30,6 +30,11 @@ You can use Kafka Connect with {{site.data.keyword.messagehub}} and can run the 
 Kafka Connect can run in either stand-alone or distributed mode. Stand-alone mode is intended for testing and temporary connections between systems. Distributed mode is more appropriate for production use. The configuration required to use {{site.data.keyword.messagehub}} with these two modes is slightly different.
 {:shortdesc}
 
+## Known issues in Kafka Connect v2.6+
+{: #kafkaconnect_v26 notoc}
+
+There are known issues with using Kafka Connect version 2.6 and above with {{site.data.keyword.messagehub}}: new versions of Kafka Connect require creating topics with the cleanup policy set to compact only. This is currently not supported in {{site.data.keyword.messagehub}}. As a short-term workaround we would recommend customers use kafka-connect 2.5.1 .
+
 ## Stand-alone worker configuration
 {: #standalone_worker notoc}
 
@@ -166,6 +171,7 @@ For example, you can use the following key-value pairs in your properties file:
 Consider reducing the number of partitions if you are making only light use of Kafka Connect.
 
 For more detailed information about Kafka Connect, see [Kafka Connect overview ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://kafka.apache.org/documentation/#connect_overview){:new_window}.
+
 
 
 
