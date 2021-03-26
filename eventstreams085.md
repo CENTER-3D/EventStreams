@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-03-10"
+lastupdated: "2021-03-26"
 
 keywords: IBM Event Streams, Kafka as a service, managed Apache Kafka, plan. Enterprise, Standard, Lite
 
@@ -158,6 +158,7 @@ The following table summarizes what is supported by the plans:
 			Sydney (au-syd)</br>
 			Frankfurt (eu-de)<br/>
 			Tokyo (jp-tok)<br/>
+			Osaka (jp-osa)<br/>
 			<br/>
 			</td>
 			<td>**Multizone location (MZR)**</br>
@@ -167,6 +168,7 @@ The following table summarizes what is supported by the plans:
 			Sydney (au-syd)</br>
 			Frankfurt (eu-de)<br/>
 			Tokyo (jp-tok)<br/>
+			Osaka (jp-osa)<br/>
 			<br/>
 			**Single zone location (SZR)**</br>
 			Seoul (seo01)<br/>
