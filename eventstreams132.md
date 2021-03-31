@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-04"
+  years: 2015, 2021
+lastupdated: "2021-03-31"
 
 keywords: IBM Event Streams, Kafka as a service, managed Apache Kafka
 
@@ -23,23 +23,31 @@ subcollection: EventStreams
 
 ## Standard plan
 {: #sla_standard}
-The {{site.data.keyword.messagehub}} service is provided with an availability of 99.99% on the Standard plan.
-For more information about the SLA for high availability services in {{site.data.keyword.Bluemix}}, see
+
+The {{site.data.keyword.messagehub}} Standard Plan provides a highly available architecture by multi-zone region deployment. In a multi-zone location, the Event Streams service is distributed across three availability zones, which means that the cluster is resilient to the failure of a single zone or any component within that zone.
+
+The {{site.data.keyword.messagehub}} service is provided with an availability of 99.99% on the Standard Plan. For more information about the SLA for high availability services in {{site.data.keyword.Bluemix}}, see
 [{{site.data.keyword.Bluemix_notm}} service description ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www-03.ibm.com/software/sla/sladb.nsf/pdf/6605-19/$file/i126-6605-19_10-2019_en_US.pdf){:new_window}.
 
 
 ## Enterprise plan
 {: #sla_enterprise}
 
-The {{site.data.keyword.messagehub}} service is provided with an availability of 99.99% on the Enterprise plan as a high availability Public environment. When the {{site.data.keyword.messagehub}} service is run in non-HA environments, such as [single zone locations](#sla_szr), the availability is 99.9%. 
-For more information about the SLA for high availability services in {{site.data.keyword.Bluemix_notm}}, see
+The {{site.data.keyword.messagehub}} Enterprise Plan provides a highly available architecture by multi-zone region deployment. In a multi-zone location, the Event Streams service is distributed across three availability zones, which means that the cluster is resilient to the failure of a single zone or any component within that zone. 
+
+In a multi-zone region deployment the {{site.data.keyword.messagehub}} service is provided with an availability of 99.99% on the Enterprise plan. For more information about the SLA for high availability services in {{site.data.keyword.Bluemix_notm}}, see
 [{{site.data.keyword.Bluemix_notm}} service description ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www-03.ibm.com/software/sla/sladb.nsf/pdf/6605-19/$file/i126-6605-19_10-2019_en_US.pdf){:new_window}.
+
+When the {{site.data.keyword.messagehub}} service is run in a non highly available configuration, such as [single zone locations](#sla_szr), the availability is 99.9%. For more information about the SLA for non highly-availabile services in {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} service description ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www-03.ibm.com/software/sla/sladb.nsf/pdf/6605-19/$file/i126-6605-19_10-2019_en_US.pdf){:new_window}.
+
 
 ## Classic plan
 {: #sla_classic}
+
 The Classic plan is deprecated. From November 1, 2019, you can no longer provision new instances of the Classic Plan. <br/>However, existing instances will continue to be supported.
 From June 30, 2020, the Classic Plan will be retired and no longer supported. Any instance of the Classic Plan still provisioned at this date will be deleted. 
 {:deprecated}
+
 The {{site.data.keyword.messagehub}} service is provided with an availability of 99.5% on the Classic plan. 
 For more information about the SLA for {{site.data.keyword.Bluemix_notm}}, see
 [{{site.data.keyword.Bluemix_notm}} service description ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www-03.ibm.com/software/sla/sladb.nsf/pdf/6605-19/$file/i126-6605-19_10-2019_en_US.pdf){:new_window}.
@@ -48,6 +56,7 @@ For more information about the SLA for {{site.data.keyword.Bluemix_notm}}, see
 ## What does 99.95% availability mean?
 Availability refers to the ability of applications to produce and consume messages from Kafka topics.
 -->
+
 
 ## How do we measure it?
 Service instances are continuously monitored for performance, error rates, and their response to synthetic operations. Outages are recorded. For more information, see [Service status for Event Streams ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status?component=messagehub&selected=status){:new_window}.
@@ -107,3 +116,7 @@ Some customers require geographic locality and therefore want to provision an {{
     For more information, see [Message acknowledgments](/docs/EventStreams?topic=EventStreams-producing_messages#message_acknowledgments). In many use cases this is not necessarily an issue. However, if message loss is unacceptable under any circumstance, consider other strategies such as using a multi-availability zone cluster, cross region replication, or producer side message checkpointing.
 
 For more information, see [single zone clusters](/docs/containers?topic=containers-regions-and-zones#regions_single_zone) and [multizone clusters](/docs/containers?topic=containers-regions-and-zones#regions_multizone).
+
+
+
+
