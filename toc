@@ -7,12 +7,11 @@ Event Streams
 
 	{: .navgroup id="learn"}
 	index.md
-	
+
 	{: .topicgroup}
 	About Event Streams
 		eventstreams010.md
 		eventstreams073.md
-	
 	eventstreams085.md
 	{: .navgroup-end}
 
@@ -61,7 +60,7 @@ Event Streams
 
 	{: .navgroup id="howto"}
 	eventstreams127.md
-		
+
 	{: .topicgroup}
 	Administering Event Streams
 		eventstreams037.md
@@ -73,7 +72,7 @@ Event Streams
 		eventstreams155.md
 		ES_Scaling_Event_Streams_Capacity.md
 		eventstreams161.md
-	
+
 	{: .topicgroup}
 	Developing apps with Event Streams
 		eventstreams050.md
@@ -86,14 +85,14 @@ Event Streams
 		eventstreams110.md
 		eventstreams025.md
 		eventstreams159.md
-	
+
 	{: .topicgroup}
 	Integrating with other services
 		eventstreams149.md
 		eventstreams153.md
 		eventstreams119.md
 		eventstreams120.md
-		
+
 	{: .topicgroup}
 	Enhancing security
 		manage-scc.md
@@ -101,12 +100,12 @@ Event Streams
 	{: .topicgroup}
 	Tutorials
 		eventstreams104.md
-	 	[Asynchronous data processing using object storage and pub/sub messaging tutorial](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-pub-sub-object-storage#asynchronous-data-processing-using-object-storage-and-pub-sub-messaging)
+		[Asynchronous data processing using object storage and pub/sub messaging tutorial](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-pub-sub-object-storage#asynchronous-data-processing-using-object-storage-and-pub-sub-messaging)
 	{: .navgroup-end}
 
 	{: .navgroup id="help"}
 	eventstreams108.md
-	
+
 	{: .topicgroup}
 	Troubleshooting
 		ts_overview.md
@@ -116,8 +115,8 @@ Event Streams
 		
 	{: .topicgroup}
 	Related links
-	 	[Event Streams Java Kafka sample](https://github.com/ibm-messaging/event-streams-samples/tree/master/kafka-java-console-sample)
-	 	[Apache Kafka client downloads](https://kafka.apache.org/downloads)
+		[Event Streams Java Kafka sample](https://github.com/ibm-messaging/event-streams-samples/tree/master/kafka-java-console-sample)
+		[Apache Kafka client downloads](https://kafka.apache.org/downloads)
 		[IBM Event Streams on ibm.com](https://www.ibm.com/cloud/event-streams)
 	{: .navgroup-end}
 
