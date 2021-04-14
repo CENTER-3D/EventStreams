@@ -93,6 +93,10 @@ Event Streams
 		eventstreams153.md
 		eventstreams119.md
 		eventstreams120.md
+		
+	{: .topicgroup}
+	Enhancing security
+		manage-scc.md
 
 	{: .topicgroup}
 	Tutorials
