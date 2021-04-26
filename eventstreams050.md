@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-03-10"
+lastupdated: "2021-04-26"
 
 keywords: IBM Event Streams, Kafka as a service, managed Apache Kafka
 
@@ -79,8 +79,6 @@ The following table summarizes what you can use with {{site.data.keyword.message
 		</tr>
 
 </table>
-
-**Known issues with Kafka Connect version 2.6 and above**: New versions Kafka Connect require creating topics with the cleanup policy set to compact only. This is currently not supported in {{site.data.keyword.messagehub}}. As a short-term workaround we would recommend customers use Kafka Connect 2.5.1 .
 
 <br/>
 
@@ -199,4 +197,3 @@ ssl.endpoint.identification.algorithm=HTTPS
 
 <br/>
 Note, if you're using a Kafka client earlier than 0.10.2.1, the <code>sasl.jaas.config</code> property isn't supported and you must instead provide the client configuration in a JAAS configuration file. 
-
