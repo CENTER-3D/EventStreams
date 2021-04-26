@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-01-13"
+  years: 2015, 2021
+lastupdated: "2021-04-26"
 
 keywords: IBM Event Streams, Kafka as a service, managed Apache Kafka
 
@@ -38,8 +38,6 @@ If you're using a Kafka client at 0.11 or later, or Kafka Streams at 0.10.2.0 or
 <dl>
 <dt>cleanup.policy</dt>
 <dd>Set to <code>delete</code> (default), <code>compact</code> or <code>delete,compact</code>
-<p>**Note:**
-If the cleanup policy is <code>compact</code> only, we automatically add <code>delete</code>, but disable deletion based on time. Messages in the topic are compacted up to 1 GB before being deleted.</p>
 </dd>
 
 <dt>retention.ms</dt>
@@ -83,6 +81,7 @@ Enterprise plan only. Set to any value between 5 minutes and 30 days</p>
 ## How long does {{site.data.keyword.messagehub}} set the log retention window for the consumer offsets topic?
 {: #offsets }
 {: faq}
+{: support}
 
 {{site.data.keyword.messagehub}} retains consumer offsets for 7 days. This corresponds to the Kafka configuration offsets.retention.minutes. 
 
@@ -92,6 +91,7 @@ The internal Kafka `__consumer_offsets` topic is visible to you as read-only on 
 You are strongly recommended not to attempt to manage the topic in any way. You cannot access the `__consumer_offsets` topic in any way on the Standard plan. 
 
 <!--following message retention info duplicated in eventstreams057-->
+
 
 ## How can I clean up a consumer group with no consumers?
 {: #clean_consumer_group}
@@ -210,6 +210,9 @@ The user is also responsible for the backup of message payload data. Although th
 Topic names are backed up by {{site.data.keyword.messagehub}}, although it is recommended good practice for users to back up topic names and the configuration data for those topics.
 
 If you have configured your {{site.data.keyword.messagehub}} instance in a Multi-Zone Region, a regional disaster is very unlikely. However, we recommend that users do plan for such circumstances. If a user's instance is no longer available because of a disaster (and a remote DR instance is not already set up), the user should consider configuring a new instance in a new region and restoring their topics and data from backup if available. Applications can then be pointed at the new instance.
+
+
+
 
 
 
