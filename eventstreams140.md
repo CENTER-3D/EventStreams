@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-01"
+  years: 2015, 2021
+lastupdated: "2021-04-26"
 
 keywords: IBM Event Streams, Kafka as a service, managed Apache Kafka
 
@@ -20,6 +20,7 @@ subcollection: EventStreams
 
 # FAQs for the Classic plan 
 {: #faqs_classic}
+
 The Classic plan is deprecated. From November 1, 2019, you can no longer provision new instances of the Classic Plan. <br/>However, existing instances will continue to be supported.
 From June 30, 2020, the Classic Plan will be retired and no longer supported. Any instance of the Classic Plan still provisioned at this date will be deleted. 
 {:deprecated}
@@ -39,8 +40,6 @@ If you're using a Kafka client at 0.11 or later, or Kafka Streams at 0.10.2.0 or
 <dl>
 <dt>cleanup.policy</dt>
 <dd>Set to <code>delete</code> (default), <code>compact</code> or <code>delete,compact</code>
-<p>**Note:**
-If the cleanup policy is <code>compact</code> only, we automatically add <code>delete</code>, but disable deletion based on time. Messages in the topic are compacted up to 1 GB before being deleted.</p>
 </dd>
 
 <dt>retention.ms</dt>
