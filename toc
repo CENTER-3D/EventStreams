@@ -53,7 +53,7 @@ Event Streams
 		eventstreams151.md
 
 	{: .topicgroup}
-	Migrating from Dedicated to Enterprise
+	Migrating from Dedicated to Enterprise plan
 		eventstreams157.md
 	{: .navgroup-end}
 
